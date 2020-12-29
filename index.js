@@ -17,7 +17,6 @@ app.post("/hook", (req, res) => {
     res.status(200).end() // Responding is important
   })
 
-app.get("/", (req, res) => {
-    console.log('app working') // Call your action on the request here
-    res.status(200).end()
+app.get("/test", (req, res) => {
+    res.status(200).end(JSON.stringify({'APP': 1}))
 })
